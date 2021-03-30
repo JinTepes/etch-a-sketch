@@ -1,0 +1,70 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #E3F2FD;
+}
+
+.pageContainer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: 
+    "header"
+    "buttons"
+    "gamegrids"
+    "footer";
+}
+
+#header{
+    grid-area: header;
+    text-align: center;
+    height: 70px;
+    color: #424242;
+}
+
+#buttonsContainer{
+    grid-area: buttons;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#btnC-child{
+    margin-top: 20px;
+}
+
+.buttons{
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    background-color: #424242;
+    border: none;
+    margin-inline: 20px;
+    color: white;
+    transition-duration: 0.2s;
+}
+.buttons:hover{
+    box-shadow: 0 5px 10px 0#616161, 0 15px 30px 0 #616161;
+}
+
+#gridsContainer{
+    display: grid;
+    grid-gap: 1px;
+    grid-area: gamegrids;
+    background-color: black;
+    min-height: 500px;
+    min-width: 500px;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.grid-item{
+    border: 0pt solid rgb(0, 0, 0);
+    background-color: white;
+}
+
+
+#footer{
+    grid-area: footer;
+    text-align: center;
+    margin: auto;
+    color: #424242;
+}
